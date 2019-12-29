@@ -14,7 +14,8 @@ spec:
   # Source of the application manifests
   source:
     repoURL: 'https://kubernetes-charts.storage.googleapis.com/'
-    chart: 'prometheus-operator-8.5.0'
+    chart: 'prometheus-operator'
+    targetRevision: '8.5.0'
     # helm specific config
     helm:
       releaseName: prometheus-operator
