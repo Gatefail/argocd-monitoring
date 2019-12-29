@@ -4,8 +4,5 @@ namespace: argocd
 bases:
   - ../../base
 
-resources:    
-  - ./values-local.yaml
-
 patchesStrategicMerge:
   - ./prometheus-helm-spec.yaml
