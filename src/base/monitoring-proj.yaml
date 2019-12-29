@@ -10,7 +10,7 @@ spec:
     server: https://kubernetes.default.svc
   sourceRepos:
   - 'git@github.com:Gatefail/argocd-monitoring.git'
-  - 'https://github.com/helm/charts'
+  - 'https://kubernetes-charts.storage.googleapis.com/'
   ## Allow creation of any cluster wide resource
   clusterResourceWhitelist:
   - group: '*'
