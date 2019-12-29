@@ -13,6 +13,7 @@ spec:
 
   # Source of the application manifests
   source:
+    repoUrl: 'https://github.com/helm/charts/tree/master'
     # helm specific config
     helm:
       releaseName: prometheus-operator
