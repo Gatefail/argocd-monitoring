@@ -1,0 +1,11 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: monitoring
+  namespace: argocd
+spec:
+  source:
+    # helm specific config
+    helm:
+      valueFiles:
+      - values-local.yaml

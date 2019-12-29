@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: monitoring
+  namespace: argocd
+spec:
+  description: Monitoring project
+  destinations:
+  - namespace: monitoring
+    server: https://kubernetes.default.svc
+  sourceRepos:
+  - 'git@github.com:Gatefail/argocd-monitoring.git'
+  ## Allow creation of any cluster wide resource
+  clusterResourceWhitelist:
+  - group: '*'
+    kind: '*'
+  - name: monitoring-sync-ci-role
+    description: Sync privileges for monitoring project
+    policies:
+    - p, proj:monitoring:monitoring-sync-ci-role, applications, sync, monitoring/monitoring-app, allow
