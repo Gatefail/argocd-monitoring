@@ -13,7 +13,7 @@ spec:
 
   # Source of the application manifests
   source:
-    repoURL: 'https://github.com/helm/charts/tree/master'
+    repoURL: 'https://kubernetes-charts.storage.googleapis.com/'
     # helm specific config
     helm:
       releaseName: prometheus-operator
