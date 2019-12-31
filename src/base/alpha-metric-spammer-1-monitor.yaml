@@ -1,7 +1,7 @@
 apiVersion: monitoring.coreos.com/v1
 kind: ServiceMonitor
 metadata:
-  name: alpha-metric-spammer-1¨
+  name: alpha-metric-spammer-1
   namespace: monitoring
 spec:
   selector:
