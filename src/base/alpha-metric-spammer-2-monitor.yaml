@@ -1,0 +1,15 @@
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: alpha-metric-spammer-2
+  namespace: monitoring
+spec:
+  selector:
+    matchLabels:
+      app: alpha-metric-spammer-2
+  namespaceSelector:
+    matchNames:
+    - project-alpha
+  endpoints:
+  - port: web
+    interval: 5s
