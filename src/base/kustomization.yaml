@@ -5,5 +5,3 @@ resources:
     - ./monitoring-app.yaml
     - ./monitoring-ns.yaml
     - ./monitoring-proj.yaml
-    - ./alpha-metric-spammer-1-monitor.yaml
-    - ./alpha-metric-spammer-2-monitor.yaml
