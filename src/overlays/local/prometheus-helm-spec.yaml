@@ -8,4 +8,4 @@ spec:
     # helm specific config
     helm:
       valueFiles:
-      - https://raw.githubusercontent.com/Gatefail/argocd-monitoring/master/src/overlays/local/values-local.yamlgi
+      - https://raw.githubusercontent.com/Gatefail/argocd-monitoring/master/src/overlays/local/values-local.yaml
