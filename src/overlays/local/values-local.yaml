@@ -1005,6 +1005,7 @@ prometheusOperator:
     - kube-system
     - default
     - project-alpha
+    - example-ns
     # releaseNamespace: true
     # additional:
     # - kube-system
